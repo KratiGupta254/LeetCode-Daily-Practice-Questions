@@ -1,0 +1,16 @@
+class Solution {
+    public int climbStairs(int n) {
+        
+        if(n==1||n==2)
+            return n;
+        
+        int call1=climbStairs(n-1);
+        int call2=climbStairs(n-2);
+        
+        int ans=call1+call2;
+        
+        return ans;
+        
+        
+    }
+}
